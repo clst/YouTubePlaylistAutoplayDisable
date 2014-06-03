@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Playlist Autoplay needs to stay OFF!
-// @version     0.01
+// @version     0.02
 // @description Why won't it stay OFF?!?
 // @include     http://*.youtube.com/watch?*
 // @include     https://*.youtube.com/watch?*
@@ -9,14 +9,16 @@
 // ==/UserScript==
 
 if(typeof onYouTubePlayerReady === 'function'){
-    ap_old_onYouTubePlayerReady = onYouTubePlayerReady;
+    //endless loop when YoutubeCenter was loaded first
+    if(!(typeof ytcenter === 'object'))
+        ap_old_onYouTubePlayerReady = onYouTubePlayerReady;
 }
 
 onYouTubePlayerReady = function(ytplayerobj){
-	if(console) console.log('YT AutoPlay Off loads...');
+    if(console) console.log('YT AutoPlay Off loads...');
     ytplayerobj.addEventListener('onStateChange', function(){
         if((apbut = document.querySelectorAll('.playlist-nav-controls .yt-uix-button-player-controls.toggle-autoplay')) && (apbut = apbut[0]) && apbut.classList.contains('yt-uix-button-toggled')){
-			if(console) console.log('YT AutoPlay Off toggles...');
+            if(console) console.log('YT AutoPlay Off toggles...');
             apbut.click();
         }
     }, false);

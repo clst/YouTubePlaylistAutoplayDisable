@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Playlist Autoplay needs to stay OFF!
-// @version     0.03
+// @version     0.04
 // @description Why won't it stay OFF?!? This will turn playlist autoplay off from time to time
 // @include     http://*.youtube.com/watch?*
 // @include     https://*.youtube.com/watch?*
@@ -8,13 +8,14 @@
 // @copyright   2014, Claudius Steinhauser
 // ==/UserScript==
 
+//does not seem to be needed with Tampermonkey, uncomment if you want it:
+/*
 if(typeof onYouTubePlayerReady === 'function'){
-    //does not seem to be needed with Tampermonkey, uncomment if you want it:
-    return;
     //causes a hang/recursion when YoutubeCenter was loaded first
     if(!(typeof ytcenter === 'object'))
         ap_old_onYouTubePlayerReady = onYouTubePlayerReady;
 }
+*/
 
 onYouTubePlayerReady = function(ytplayerobj){
     if(console) console.log('YT AutoPlay Off loads...');

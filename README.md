@@ -3,6 +3,13 @@ YouTubePlaylistAutoplayDisable
 
 **Why won't it stay OFF?!?**
 
+**Note:**
+*might be broken or break with a new Youtube update as of 2014-09-01*
+
+This functionality has now also been included in this excellent script: https://github.com/YePpHa/YouTubeCenter
+
+---
+
 This userscript will turn playlist autoplay off with every state change.  
 Tested with
 *  Tampermonkey and Chrome/Blink/Sleipnir

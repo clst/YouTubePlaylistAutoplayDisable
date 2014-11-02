@@ -4,9 +4,10 @@ YouTubePlaylistAutoplayDisable
 **Why won't it stay OFF?!?**
 
 **Note:**
-*might be broken or break with a new Youtube update as of 2014-09-01*
+*Timing has been fixed, should now toggle reliably*
 
 This functionality has now also been included in this excellent script: https://github.com/YePpHa/YouTubeCenter
+In YouTubeCenter it will also work for playlists where the autoplay button is not visible, something this script cannot do
 
 ---
 

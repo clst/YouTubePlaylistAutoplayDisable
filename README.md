@@ -4,7 +4,8 @@ YouTubePlaylistAutoplayDisable
 **Why won't it stay OFF?!?**
 
 **Note:**
-*Timing has been fixed, should now toggle reliably*
+*This will not work reliably when SPF (top red loading bar) is enabled.*
+*You can use this work-around: https://openuserjs.org/scripts/JoeSimmons/YouTube_-_Disable_Red_Bar_aka_SPF*
 
 This functionality has now also been included in this excellent script: https://github.com/YePpHa/YouTubeCenter
 In YouTubeCenter it will also work for playlists where the autoplay button is not visible, something this script cannot do

@@ -1,6 +1,9 @@
 YouTubePlaylistAutoplayDisable
 ==============================
 
+This is currently non-functional since YouTube decided to remove the underlying functionality
+---------------------------------------------------------------------------------------------
+
 **Why won't it stay OFF?!?**
 
 **Note:**
